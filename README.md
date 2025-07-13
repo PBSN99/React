@@ -1,5 +1,8 @@
 # React 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea01c29 (New changes)
 
 # Parcl https://parceljs.org/
 - Dev build
