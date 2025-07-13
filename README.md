@@ -1,5 +1,4 @@
-# Namaste React 
-
+# React 
 
 # Parcel https://parceljs.org/
 - Dev build
