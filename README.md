@@ -1,8 +1,11 @@
 # React 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> ea01c29 (New changes)
+=======
+>>>>>>> 10481832c3241a998bdc698535032bf79b5ef0ba
 
 # Parcl https://parceljs.org/
 - Dev build
