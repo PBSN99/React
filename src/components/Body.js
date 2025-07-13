@@ -17,19 +17,8 @@ const Body = () => {
           <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
           <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
           <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
+         
+       
       </div>
     </div>
   )
