@@ -1,7 +1,7 @@
 # React 
 
 
-# Parcel https://parceljs.org/
+# Parcl https://parceljs.org/
 - Dev build
 - Local Server
 - HMR = Hot module replacement
