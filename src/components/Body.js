@@ -1,24 +1,29 @@
 import RestroCard from "./RestroCard";
 import { useState } from "react";
-import resList from "../utils/mocdata";
+import {restaurantList} from "../utils/mocdata"
 const Body = () => {
+
+  const [listOfRestaurants, setListOfRestaurants]= useState(restaurantList);
+
   return(
     <div className="body">
       <div className="filter">
-        <button className="filter-btn" onClick={() => {console.log("Button Pressed")}}>Top Rated Restaurants</button>
+        <button 
+          className="filter-btn" 
+          onClick={() => {
+            const filteredList = listOfRestaurants.filter(
+              (res) => res.data.avgRating >= 4
+            );
+           setListOfRestaurants(filteredList);
+            }}
+        >
+          Top Rated Restaurants
+              </button>
       </div>
       <div className="res-cointer">
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-          <RestroCard name="Balu Biriyani" cuisines="Indian, American, Italian" rating="4.5 Stars" delivery_time="38min"/>
-         
-       
+        { listOfRestaurants.map((restaurantList) => (
+          <RestroCard key={restaurantList.data.id} resData={restaurantList}/>
+          ))}  
       </div>
     </div>
   )

@@ -1,24 +1,27 @@
+import {CDN_URL} from "../utils/constants";
 const RestroCard = (props) => {
+  const {resData}=props;
 
-  // const {
-  //   name,
-  //   rating,
-  //   cuisines,
-  //   delivery_time
-  // } = resData?.restaurant_data;
-
+  const {
+    cloudinaryImageId,
+    name,
+    avgRating,
+    cuisines,
+    costForTwo,
+    deliveryTime
+  } = resData?.data;
 
   return(
     <div className="res-card">
       <img 
         className="res-logo" alt ="res-logo" 
-        src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1662123565/rldy0mhqrr1dsnmf1cq4.webp"></img>
-      <h3>{props.name}</h3>
-      <h4>{props.cuisines}</h4>
-      <h4>{props.rating}</h4>
-      <h4>{props.delivery_time}</h4>
+        src={CDN_URL+cloudinaryImageId}></img>
+      <h3>{name}</h3>
+      <h4>{cuisines}</h4>
+      <h4>{avgRating}</h4>
+
     </div>
-  )
-}
+  );
+};
 
 export default RestroCard;
