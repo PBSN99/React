@@ -6,9 +6,7 @@ const RestroCard = (props) => {
     cloudinaryImageId,
     name,
     avgRating,
-    cuisines,
-    costForTwo,
-    deliveryTime
+    cuisines
   } = resData?.data;
 
   return(
