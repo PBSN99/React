@@ -56,6 +56,11 @@ import {Component} from "path"
 # React Hooks
 - Normal JS utility Fuctions - Created by facebook developers 
 - useState() - SuperPowerful state variables in react.
+- const [stateVariable, setStateVariable] = useState(initialValue);
+- stateVariable: The current value of the state.
+- setStateVariable: A function to update the state.
+- initialValue: The initial value of the state (can be a number, string, array, object, etc.).
+
 - useEffect() 
 - When i write npm install react - Then we got all the utility functions in our code.
 - When ever a state variables updates react re-renders the components.
