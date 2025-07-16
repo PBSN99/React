@@ -63,4 +63,4 @@ import {Component} from "path"
 
 - useEffect() 
 - When i write npm install react - Then we got all the utility functions in our code.
-- When ever a state variables updates react re-renders the components.
+- When ever a state variables updates react re-renders the components
