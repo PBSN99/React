@@ -2,9 +2,9 @@ import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
 import {resList} from "../utils/mocdata"
 const Body = () => {
+  const [listOfRestaurants, setListOfRestaurants]= useState(resList);
   //local state variable - super powerful variable 
   //const [stateVariable, setStateVariable] = useState(initialValue);
-  const [listOfRestaurants, setListOfRestaurants]= useState(resList);
 
   useEffect(() => {
     fetchData();
