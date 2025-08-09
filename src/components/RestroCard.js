@@ -6,17 +6,21 @@ const RestroCard = (props) => {
     cloudinaryImageId,
     name,
     avgRating,
-    cuisines
-  } = resData?.data;
+    cuisines,
+    costForTwo,
+    sla
+  } = resData?.info;
 
   return(
     <div className="res-card">
       <img 
         className="res-logo" alt ="res-logo" 
-        src={CDN_URL+cloudinaryImageId}></img>
+        src={CDN_URL + cloudinaryImageId}></img>
       <h3>{name}</h3>
       <h4>{cuisines}</h4>
       <h4>{avgRating}</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{sla?.slaString}</h4>
 
     </div>
   );

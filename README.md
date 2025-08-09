@@ -61,6 +61,30 @@ import {Component} from "path"
 - setStateVariable: A function to update the state.
 - initialValue: The initial value of the state (can be a number, string, array, object, etc.).
 
-- useEffect() 
 - When i write npm install react - Then we got all the utility functions in our code.
-- When ever a state variables updates react re-renders the components
+- React keep track of all state variables(special variables).
+- When ever a state variables updates react re-renders the components. check the difference between previous virtual dom and new virtual dom. Only updates that difference on real dom.
+
+- useEffect() 
+- There are 2 arguments we will keep into useEffect.
+- First argument is arrow function (Callback function)  () => {} 
+- Second argument is dependency array. []
+- This callback function will be called after your component renders.
+- So if you have to do something after rendering the component you have to write it inside useEffect.
+
+- fetch() is a built-in JavaScript function used to make HTTP requests (like GET, POST, etc.) to servers 
+- for example, to fetch data from an API.
+
+- If there is an origin mismatch then browsers blocks that api call - CORS policy.
+- If suppose i want to call swiggy's api from my local host.
+- Cors chrome extension should be added to access.
+
+- Shimmer UI 
+- Shimmer UI (also called skeleton loading or shimmer loading) is a loading placeholder animation that  gives users a visual hint that content is being loaded.
+- Instead of showing a blank screen or a spinner, it displays gray blocks with a shimmering effect (like a light moving across), imitating the layout of the real content.
+
+
+
+
+
+
