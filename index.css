@@ -4,7 +4,7 @@
   border: 1px solid black;
 }
 .logo {
-  width: 120px;
+  width: 100px;
 }
 .nav-items > ul {
   font-size: 20px;
@@ -17,7 +17,7 @@
 }
 .res-card{
   margin:10px;
-  width:200px;
+  width: 177px;
   height: 400px;
   background-color: lightgray;
   padding: 5px;
@@ -43,7 +43,7 @@
 }
 .shimmer-card{
   margin: 10px;
-  width: 200px;
+  width: 177px;
   height: 400px;
   padding: 5px;
   background-color: #f0f0f0;
@@ -59,4 +59,7 @@
 }
 .filter{
   display: flex;
+}
+.search-btn{
+  cursor: pointer;
 }

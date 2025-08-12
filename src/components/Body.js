@@ -17,10 +17,11 @@ const Body = () => {
     const data = await fetch(
       "https://corsproxy.io/?url=https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9939595&lng=80.1706653&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+
     const json = await data.json();
-    console.log(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    // console.log(
+    //   json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
 
     //optional chaining
     setListOfRestaurants(
@@ -51,6 +52,7 @@ const Body = () => {
             }}
           />
           <button
+            className="search-btn"
             onClick={() => {
               const filteredRestaurant = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -81,4 +83,5 @@ const Body = () => {
     </div>
   );
 };
+
 export default Body;
